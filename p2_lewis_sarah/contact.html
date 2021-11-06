@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parker Farms</title>
+
+    <meta charset= "utf-8"/>
+
+    <!-- If later than IE 9 -->
+        <script src="/js/html5shiv.js"></script>
+    <!-- End if -->
+
+<!-- CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Hamburger Menu Script -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Smooth Scroll Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Asynchronous Loading Script -->
+        <script src="scripts/scripts.js" type="text/javascript"></script>
+        <script>
+          window.onload = function() {
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'http://sarahjlewis.net/script.js';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+          }
+        </script>
+
+  </head>
+
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="logo-container">
+            <span class="logo-helper"></span>
+            <a href="index.html">
+            <img class="toplogo" src="images/logo-text.png" alt="Parker Farms Pumpkin Patch sketch logo."/>
+            </a>
+          </div>
+          <div class="topnav" id="mytopnav">
+              <a href="index.html">Home</a>
+              <a href="visit.html">Plan Your Visit</a>
+              <a href="cafe.html">Our Cafe</a>
+              <a href="contact.html" class="active">Contact Us</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+<!-- Navigation End -->
+
+        <main>
+          <div class="contact-multi-gords">
+            <img src="images/multi-color-gords.jpg" alt="Pile of small gords with multiple soft hures of orange."/>
+            <div class="hero-text">
+              <h1>Contact Parker Farms</h1>
+            </div>
+          </div>
+
+
+<!--Contact Form--------->
+        <article>
+      		<section id="contact" class="contact-hero">
+      			<div class="form-container">
+              <h2 class="contact-h2">Visiting the Pumpkin Patch</h2>
+      					<p class="contact-us">Thanks for considering a visit to Parker Farms Pumpkin Patch! There’s no need to make a reservation before planning your visit to our farm for the day during the fall season.  If you do have any questions about larger groups or events, please feel free to reach out to us to confirm accomodation.  We also welcome any feedback you would like to leave after your visit!</p>
+      					<p class="contact-us">You can reach out to us directly through our contact info listed at the bottom of the page or just fill out the contact form below so we can follow up with you!</p>
+      					<form class="contact-form" id="first_form" name="first_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+      						<div class="first-name input-section">
+      							<label for="firstname" class="label_input_wrap">First Name: </label>
+      							<input type="text" name="req_firstname" id="firstname"/>
+      						</div>
+
+      						<div class="last-name input-section">
+      							<label for="lastname" class="label_input_wrap">Last Name: </label>
+      							<input type="text" name="lastname" id="lastname"/>
+      						</div>
+
+      						<div class="email input-section">
+      							<label for="email" class="label_input_wrap">Email: </label>
+      							<input type="email" name="req_email" id="email"/>
+      						</div>
+
+      						<div class="questions input-section">
+      							<label for="questions" class="label_input_wrap">Questions: </label>
+      							<textarea name="questions" id="questions" cols="55" rows="5"></textarea>
+      						</div>
+
+      						<div class="submit input-section">
+      							<input type="submit" value="Submit"/>
+      						</div>
+      					</form>
+      			</div>
+      		</section>
+        </article>
+
+        </main>
+
+        <!-- Begin Footer -->
+            <footer>
+
+              <div class="siteFooterBar">
+                <div class="logo-content">
+                  <img class="footer-logo" src="images/pumpkin-logo.png" alt="Parker Farms Pumpkin Patch sketch logo."/>
+                </div>
+              </div>
+
+                <div class="footer-contact">
+                  <h3>Contact Info</h3>
+                    <p>555.555.5555</p>
+                    <p>parkerfarms@email.com</p>
+                </div>
+
+                <div class="footer-location">
+                  <h3>Location</h3>
+                    <p>1207 Parker Dr.</p>
+                    <p>Ellijay, GA 30504</p>
+                </div>
+
+            </footer>
+
+          </body>
+
+
+        </html>
